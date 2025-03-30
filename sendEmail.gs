@@ -1,35 +1,3 @@
-# 📧 Automated Email Reports  
-
-## 🚀 Overview  
-This Google Apps Script automates email reports by extracting data from Google Sheets, formatting the content, and sending it via email on a scheduled basis. This helps businesses automate daily, weekly, or monthly reports without manual effort.  
-
-## 🔹 Features  
-✅ Extracts data from Google Sheets  
-✅ Sends formatted email reports  
-✅ Supports automated scheduling with triggers  
-✅ Easy customization for different data sources  
-
-## 📌 How It Works  
-1. The script fetches data from a Google Sheet.  
-2. Formats the extracted data into a readable email.  
-3. Sends the email automatically to a predefined recipient.  
-4. Can be scheduled using Google Apps Script triggers (e.g., daily, weekly).  
-
-## 🛠️ Setup Instructions  
-1. Open Google Sheets and go to **Extensions → Apps Script**.  
-2. Delete any existing code and paste the contents of `code.gs`.  
-3. Modify the `recipient@example.com` email in the script.  
-4. Rename your Google Sheet to match the script’s expected sheet name (default: "Sales Report").  
-5. Go to **Triggers** (clock icon) and set a time-based trigger (e.g., run daily).  
-
-## 📩 Example Email Output  
-![Email Report](https://i.imgur.com/5cKuhrp.png)
-
-
-
-## 📜 Script Code (`sendEmail.gs`)  
-
-```javascript
 function sendAutomatedEmail() {
   var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Sales Report");
   var data = sheet.getDataRange().getValues();
