@@ -17,7 +17,7 @@ This Google Apps Script automates email reports by extracting data from Google S
 
 ## 🛠️ Setup Instructions  
 1. Open Google Sheets and go to **Extensions → Apps Script**.  
-2. Delete any existing code and paste the contents of `code.gs`.  
+2. Delete any existing code and paste the contents of `sendEmail.gs`.  
 3. Modify the `recipient@example.com` email in the script.  
 4. Rename your Google Sheet to match the script’s expected sheet name (default: "Sales Report").  
 5. Go to **Triggers** (clock icon) and set a time-based trigger (e.g., run daily).  
